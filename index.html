@@ -2,233 +2,104 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Antonio Esposito | Home Chef Italiano</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <meta name="description" content="Antonio Esposito, home chef italiano. Cucina d'autore a domicilio, tradizione e creatività per esperienze gastronomiche uniche."/>
-  <meta name="author" content="Antonio Esposito"/>
+  <title>Antonio Esposito | Home Chef</title>
+  <meta name="description" content="Antonio Esposito, home chef italiano. Cucina d’autore a domicilio, esperienze gastronomiche su misura." />
 
-  <style>
-    :root {
-      --bg: #0e0e0e;
-      --bg-soft: #161616;
-      --primary: #d4af37;
-      --text: #f5f5f5;
-      --muted: #b5b5b5;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Helvetica Neue', Arial, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-    }
-
-    a {
-      color: var(--primary);
-      text-decoration: none;
-    }
-
-    header {
-      min-height: 100vh;
-      background: radial-gradient(circle at top, #1f1f1f, #000);
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 2rem;
-    }
-
-    header img {
-      width: 180px;
-      margin-bottom: 2rem;
-    }
-
-    header h1 {
-      font-size: clamp(2.5rem, 6vw, 4rem);
-      letter-spacing: 2px;
-      margin-bottom: 1rem;
-    }
-
-    header p {
-      max-width: 700px;
-      font-size: 1.2rem;
-      color: var(--muted);
-      margin-bottom: 2.5rem;
-    }
-
-    .cta {
-      display: inline-block;
-      padding: 0.9rem 2.2rem;
-      border: 1px solid var(--primary);
-      color: var(--primary);
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      transition: all 0.3s ease;
-    }
-
-    .cta:hover {
-      background: var(--primary);
-      color: #000;
-    }
-
-    section {
-      padding: 6rem 2rem;
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    section h2 {
-      font-size: 2.4rem;
-      margin-bottom: 2rem;
-      color: var(--primary);
-      letter-spacing: 1px;
-    }
-
-    .about p {
-      max-width: 800px;
-      font-size: 1.1rem;
-      color: var(--muted);
-    }
-
-    .values {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2.5rem;
-      margin-top: 3rem;
-    }
-
-    .value-box {
-      background: var(--bg-soft);
-      padding: 2rem;
-      border-left: 3px solid var(--primary);
-    }
-
-    .value-box h3 {
-      margin-bottom: 1rem;
-      color: var(--primary);
-    }
-
-    .experience ul {
-      list-style: none;
-      max-width: 900px;
-    }
-
-    .experience li {
-      padding: 1.2rem 0;
-      border-bottom: 1px solid #2a2a2a;
-      color: var(--muted);
-    }
-
-    .experience strong {
-      color: var(--text);
-    }
-
-    .contact {
-      background: linear-gradient(180deg, #111, #000);
-      text-align: center;
-    }
-
-    .contact p {
-      font-size: 1.2rem;
-      margin-bottom: 2rem;
-      color: var(--muted);
-    }
-
-    footer {
-      padding: 2rem;
-      text-align: center;
-      font-size: 0.9rem;
-      color: #777;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
 
   <!-- HERO -->
-  <header>
-    <img src="assets/logo.png" alt="Antonio Esposito Home Chef Logo"/>
-    <h1>Antonio Esposito</h1>
-    <p>
-      Home Chef italiano. Cucina d’autore a domicilio, dove tradizione,
-      tecnica e creatività si incontrano per creare esperienze gastronomiche
-      autentiche e memorabili.
+  <header class="hero">
+    <div class="logo-wrapper reveal">
+      <img src="assets/logo.png" alt="Antonio Esposito Home Chef" />
+    </div>
+
+    <h1 class="reveal">Antonio Esposito</h1>
+
+    <p class="subtitle reveal">
+      Cucina italiana a domicilio.<br>
+      Esperienze gastronomiche autentiche, intime, su misura.
     </p>
-    <a href="#contatti" class="cta">Richiedi un evento</a>
+
+    <a href="#contatti" class="cta reveal">Contattami</a>
   </header>
 
-  <!-- ABOUT -->
-  <section class="about">
-    <h2>La mia cucina</h2>
-    <p>
-      Vengo dal sud dello stivale, una terra dove il cibo è cultura,
-      identità e memoria. La mia cucina nasce dal rispetto profondo
-      per la materia prima e dalla volontà di raccontare storie attraverso
-      i piatti, fondendo tradizione italiana e visione contemporanea.
-    </p>
+  <!-- MANIFESTO -->
+  <section class="section">
+    <div class="container">
+      <p class="lead reveal">
+        La mia cucina nasce dal sud dello stivale, dove il cibo è cultura,
+        memoria e rispetto per la materia prima.
+      </p>
 
-    <div class="values">
-      <div class="value-box">
+      <p class="reveal">
+        Ogni esperienza è progettata intorno alle persone, agli spazi
+        e ai momenti. Nulla è standard, nulla è replicabile.
+      </p>
+
+      <p class="reveal">
+        Credo in una cucina elegante, essenziale, capace di emozionare
+        senza mai ostentare.
+      </p>
+    </div>
+  </section>
+
+  <!-- VALUES -->
+  <section class="section dark">
+    <div class="container grid">
+      <div class="card reveal">
         <h3>Tradizione</h3>
         <p>
           Tecniche classiche italiane, sapori riconoscibili,
-          ricette che parlano di famiglia e territorio.
+          rispetto per la materia prima.
         </p>
       </div>
 
-      <div class="value-box">
+      <div class="card reveal">
         <h3>Esperienza</h3>
         <p>
-          Formazione ALMA e anni di lavoro in ristoranti
-          di alto livello in tutta Italia.
+          Una visione contemporanea del servizio a domicilio,
+          costruita sull’ascolto e sulla cura del dettaglio.
         </p>
       </div>
 
-      <div class="value-box">
-        <h3>Su Misura</h3>
+      <div class="card reveal">
+        <h3>Su misura</h3>
         <p>
-          Ogni evento è unico: menu personalizzati,
-          attenzione ai dettagli e servizio sartoriale.
+          Menu personalizzati, eventi intimi,
+          un servizio discreto e raffinato.
         </p>
       </div>
     </div>
   </section>
 
-  <!-- EXPERIENCE -->
-  <section class="experience">
-    <h2>Percorso professionale</h2>
-    <ul>
-      <li><strong>Capo partita – Primi piatti</strong> | Ristorante Sellero & Ventresca, Roma</li>
-      <li><strong>Cuoco</strong> | Ristorante Sant’Andrea, Roma</li>
-      <li><strong>Responsabile di cucina</strong> | RetròGusto Bistrot, Padova</li>
-      <li><strong>Commis</strong> | Hotel Il Pellicano, Porto Ercole</li>
-      <li><strong>ALMA</strong> – Scuola Internazionale di Cucina Italiana</li>
-    </ul>
+  <!-- QUOTE -->
+  <section class="quote-section">
+    <p class="reveal">
+      “Cucinare per qualcuno è un atto di fiducia.”
+    </p>
   </section>
 
   <!-- CONTACT -->
-  <section class="contact" id="contatti">
-    <h2>Contatti</h2>
-    <p>
-      Per eventi privati, cene a domicilio o collaborazioni,
-      scrivimi o chiamami direttamente.
-    </p>
-    <p>
-      📞 <a href="tel:+393279988634">+39 327 998 8634</a><br/>
-      ✉️ <a href="mailto:a.esposito99@blu.it">a.esposito99@blu.it</a>
-    </p>
+  <section class="section contact" id="contatti">
+    <div class="container reveal">
+      <h2>Contatti</h2>
+      <p>
+        Per cene private, eventi o collaborazioni:
+      </p>
+      <p class="contact-info">
+        <a href="tel:+393279988634">+39 327 998 8634</a><br>
+        <a href="mailto:a.esposito99@blu.it">a.esposito99@blu.it</a>
+      </p>
+    </div>
   </section>
 
   <footer>
-    © 2025 Antonio Esposito — Home Chef Italiano
+    © Antonio Esposito — Home Chef
   </footer>
 
 </body>
